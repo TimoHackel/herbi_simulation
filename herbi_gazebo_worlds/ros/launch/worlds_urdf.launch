@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+
+<launch>
+	<arg name="WORLD" default="$(find herbi_gazebo_worlds)/ros/worlds/emptyfield.world"/>
+	<arg name="WORLD_DES" default="$(find herbi_gazebo_worlds)/ros/worlds/field1.urdf"/>
+        <!-- start gazebo with empty world -->
+        <include file="$(find herbi_gazebo_worlds)/ros/launch/worlds.launch">
+		<arg name="WORLD" value="$(arg WORLD)"/>
+	</include>
+
+        <!-- send world urdf to param server -->
+        <!--param name="world_description_" command="$(find xacro)/xacro.py $(arg WORLD)" /-->
+    	<!--node name="gazebo" pkg="gazebo" type="gazebo" args="$(optenv SIMX) $(arg WORLD)" respawn="false" output="screen"/-->
+
+        <!-- push world_description to factory and spawn robot in gazebo -->
+        <!--node name="spawn_urdf_world" pkg="gazebo" type="spawn_model" args="-urdf -param world_description -x 0 -y 0 -z 0.01 -R 0.0 -P 0.0 -Y 0 -model field" respawn="false" output="screen" /-->
+
+	<node name="spawn_urdf_world" pkg="gazebo" type="spawn_model" args="-urdf -file $(arg WORLD_DES) -x 0 -y 0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0 -model field" respawn="false" output="screen" />
+
+</launch>
+

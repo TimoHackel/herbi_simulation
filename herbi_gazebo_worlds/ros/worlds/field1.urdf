@@ -1,0 +1,2133 @@
+<?xml version="1.0"?> 
+<robot name="field"> 
+ <!-- auto generated urdf file --> 
+ <link name="dummy_link"> 
+  <inertial> 
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" /> 
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" /> 
+  </inertial> 
+  <visual> 
+   <origin xyz="0 0 0" /> 
+   <geometry> 
+    <box size="0.00 0.00 0.00" /> 
+   </geometry> 
+  </visual> 
+  <collision> 
+   <origin xyz="0 0 0" /> 
+   <geometry> 
+    <box size="0.00 0.00 0.00" /> 
+   </geometry> 
+  </collision> 
+ </link> 
+ 
+ 
+ <!-- generate plants --> <link name="plant_1">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_1" type="fixed">
+  <origin xyz="-0.002290 0.364183 0.000000" rpy="0.000000 0.000000 1.571008" />
+  <parent link="dummy_link" />
+  <child link="plant_1" />
+ </joint>
+
+
+ <link name="plant_2">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_2" type="fixed">
+  <origin xyz="0.030535 -0.377070 0.000000" rpy="0.000000 0.000000 1.884049" />
+  <parent link="dummy_link" />
+  <child link="plant_2" />
+ </joint>
+
+
+ <link name="plant_3">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_3" type="fixed">
+  <origin xyz="0.003315 -1.158200 0.000000" rpy="0.000000 0.000000 0.009769" />
+  <parent link="dummy_link" />
+  <child link="plant_3" />
+ </joint>
+
+
+ <link name="plant_4">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_4" type="fixed">
+  <origin xyz="-0.000463 -1.934411 0.000000" rpy="0.000000 0.000000 3.063062" />
+  <parent link="dummy_link" />
+  <child link="plant_4" />
+ </joint>
+
+
+ <link name="plant_5">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_5" type="fixed">
+  <origin xyz="0.142994 0.340417 0.000000" rpy="0.000000 0.000000 0.722328" />
+  <parent link="dummy_link" />
+  <child link="plant_5" />
+ </joint>
+
+
+ <link name="plant_6">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_6" type="fixed">
+  <origin xyz="0.143202 -0.359106 0.000000" rpy="0.000000 0.000000 2.392607" />
+  <parent link="dummy_link" />
+  <child link="plant_6" />
+ </joint>
+
+
+ <link name="plant_7">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_7" type="fixed">
+  <origin xyz="0.121940 -1.143918 0.000000" rpy="0.000000 0.000000 1.971046" />
+  <parent link="dummy_link" />
+  <child link="plant_7" />
+ </joint>
+
+
+ <link name="plant_8">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_8" type="fixed">
+  <origin xyz="0.178488 -1.898344 0.000000" rpy="0.000000 0.000000 1.311705" />
+  <parent link="dummy_link" />
+  <child link="plant_8" />
+ </joint>
+
+
+ <link name="plant_9">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_9" type="fixed">
+  <origin xyz="0.315813 0.400267 0.000000" rpy="0.000000 0.000000 2.911124" />
+  <parent link="dummy_link" />
+  <child link="plant_9" />
+ </joint>
+
+
+ <link name="plant_10">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_10" type="fixed">
+  <origin xyz="0.348682 -0.393159 0.000000" rpy="0.000000 0.000000 2.369821" />
+  <parent link="dummy_link" />
+  <child link="plant_10" />
+ </joint>
+
+
+ <link name="plant_11">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_11" type="fixed">
+  <origin xyz="0.303612 -1.128318 0.000000" rpy="0.000000 0.000000 2.517615" />
+  <parent link="dummy_link" />
+  <child link="plant_11" />
+ </joint>
+
+
+ <link name="plant_12">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_12" type="fixed">
+  <origin xyz="0.334778 -1.898251 0.000000" rpy="0.000000 0.000000 0.447604" />
+  <parent link="dummy_link" />
+  <child link="plant_12" />
+ </joint>
+
+
+ <link name="plant_13">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_13" type="fixed">
+  <origin xyz="0.440604 0.362380 0.000000" rpy="0.000000 0.000000 0.365034" />
+  <parent link="dummy_link" />
+  <child link="plant_13" />
+ </joint>
+
+
+ <link name="plant_14">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_14" type="fixed">
+  <origin xyz="0.447165 -0.367612 0.000000" rpy="0.000000 0.000000 0.396790" />
+  <parent link="dummy_link" />
+  <child link="plant_14" />
+ </joint>
+
+
+ <link name="plant_15">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_15" type="fixed">
+  <origin xyz="0.417992 -1.175468 0.000000" rpy="0.000000 0.000000 0.284061" />
+  <parent link="dummy_link" />
+  <child link="plant_15" />
+ </joint>
+
+
+ <link name="plant_16">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_16" type="fixed">
+  <origin xyz="0.440794 -1.879420 0.000000" rpy="0.000000 0.000000 1.240507" />
+  <parent link="dummy_link" />
+  <child link="plant_16" />
+ </joint>
+
+
+ <link name="plant_17">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_17" type="fixed">
+  <origin xyz="0.605624 0.349261 0.000000" rpy="0.000000 0.000000 0.518780" />
+  <parent link="dummy_link" />
+  <child link="plant_17" />
+ </joint>
+
+
+ <link name="plant_18">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_18" type="fixed">
+  <origin xyz="0.615291 -0.353090 0.000000" rpy="0.000000 0.000000 1.627948" />
+  <parent link="dummy_link" />
+  <child link="plant_18" />
+ </joint>
+
+
+ <link name="plant_19">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_19" type="fixed">
+  <origin xyz="0.557977 -1.145580 0.000000" rpy="0.000000 0.000000 0.175716" />
+  <parent link="dummy_link" />
+  <child link="plant_19" />
+ </joint>
+
+
+ <link name="plant_20">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_20" type="fixed">
+  <origin xyz="0.604842 -1.899324 0.000000" rpy="0.000000 0.000000 1.608729" />
+  <parent link="dummy_link" />
+  <child link="plant_20" />
+ </joint>
+
+
+ <link name="plant_21">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_21" type="fixed">
+  <origin xyz="0.729188 0.344576 0.000000" rpy="0.000000 0.000000 2.103738" />
+  <parent link="dummy_link" />
+  <child link="plant_21" />
+ </joint>
+
+
+ <link name="plant_22">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_22" type="fixed">
+  <origin xyz="0.741063 -0.360834 0.000000" rpy="0.000000 0.000000 2.548968" />
+  <parent link="dummy_link" />
+  <child link="plant_22" />
+ </joint>
+
+
+ <link name="plant_23">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_23" type="fixed">
+  <origin xyz="0.721103 -1.169033 0.000000" rpy="0.000000 0.000000 1.622637" />
+  <parent link="dummy_link" />
+  <child link="plant_23" />
+ </joint>
+
+
+ <link name="plant_24">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_24" type="fixed">
+  <origin xyz="0.762785 -1.936334 0.000000" rpy="0.000000 0.000000 1.070853" />
+  <parent link="dummy_link" />
+  <child link="plant_24" />
+ </joint>
+
+
+ <link name="plant_25">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_25" type="fixed">
+  <origin xyz="0.895786 -0.420655 0.000000" rpy="0.000000 0.000000 2.175998" />
+  <parent link="dummy_link" />
+  <child link="plant_25" />
+ </joint>
+
+
+ <link name="plant_26">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_26" type="fixed">
+  <origin xyz="0.915495 -1.209445 0.000000" rpy="0.000000 0.000000 1.559610" />
+  <parent link="dummy_link" />
+  <child link="plant_26" />
+ </joint>
+
+
+ <link name="plant_27">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_27" type="fixed">
+  <origin xyz="0.909576 -1.939668 0.000000" rpy="0.000000 0.000000 1.661658" />
+  <parent link="dummy_link" />
+  <child link="plant_27" />
+ </joint>
+
+
+ <link name="plant_28">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_28" type="fixed">
+  <origin xyz="1.049773 -0.408582 0.000000" rpy="0.000000 0.000000 0.467684" />
+  <parent link="dummy_link" />
+  <child link="plant_28" />
+ </joint>
+
+
+ <link name="plant_29">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_29" type="fixed">
+  <origin xyz="1.020310 -1.200255 0.000000" rpy="0.000000 0.000000 1.246089" />
+  <parent link="dummy_link" />
+  <child link="plant_29" />
+ </joint>
+
+
+ <link name="plant_30">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_30" type="fixed">
+  <origin xyz="1.030362 -1.981138 0.000000" rpy="0.000000 0.000000 2.625610" />
+  <parent link="dummy_link" />
+  <child link="plant_30" />
+ </joint>
+
+
+ <link name="plant_31">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_31" type="fixed">
+  <origin xyz="1.215169 -0.458499 0.000000" rpy="0.000000 0.000000 2.762630" />
+  <parent link="dummy_link" />
+  <child link="plant_31" />
+ </joint>
+
+
+ <link name="plant_32">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_32" type="fixed">
+  <origin xyz="1.165174 -1.233503 0.000000" rpy="0.000000 0.000000 0.814444" />
+  <parent link="dummy_link" />
+  <child link="plant_32" />
+ </joint>
+
+
+ <link name="plant_33">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_33" type="fixed">
+  <origin xyz="1.175471 -1.947902 0.000000" rpy="0.000000 0.000000 2.724098" />
+  <parent link="dummy_link" />
+  <child link="plant_33" />
+ </joint>
+
+
+ <link name="plant_34">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_34" type="fixed">
+  <origin xyz="1.340194 -0.446954 0.000000" rpy="0.000000 0.000000 2.704223" />
+  <parent link="dummy_link" />
+  <child link="plant_34" />
+ </joint>
+
+
+ <link name="plant_35">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_35" type="fixed">
+  <origin xyz="1.339344 -1.270822 0.000000" rpy="0.000000 0.000000 0.149042" />
+  <parent link="dummy_link" />
+  <child link="plant_35" />
+ </joint>
+
+
+ <link name="plant_36">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_36" type="fixed">
+  <origin xyz="1.375510 -1.916971 0.000000" rpy="0.000000 0.000000 2.785297" />
+  <parent link="dummy_link" />
+  <child link="plant_36" />
+ </joint>
+
+
+ <link name="plant_37">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_37" type="fixed">
+  <origin xyz="1.490331 -0.533503 0.000000" rpy="0.000000 0.000000 0.953732" />
+  <parent link="dummy_link" />
+  <child link="plant_37" />
+ </joint>
+
+
+ <link name="plant_38">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_38" type="fixed">
+  <origin xyz="1.498424 -1.293199 0.000000" rpy="0.000000 0.000000 1.235331" />
+  <parent link="dummy_link" />
+  <child link="plant_38" />
+ </joint>
+
+
+ <link name="plant_39">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_39" type="fixed">
+  <origin xyz="1.496619 -2.005838 0.000000" rpy="0.000000 0.000000 2.068800" />
+  <parent link="dummy_link" />
+  <child link="plant_39" />
+ </joint>
+
+
+ <link name="plant_40">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_40" type="fixed">
+  <origin xyz="1.633504 -0.544368 0.000000" rpy="0.000000 0.000000 2.683734" />
+  <parent link="dummy_link" />
+  <child link="plant_40" />
+ </joint>
+
+
+ <link name="plant_41">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_41" type="fixed">
+  <origin xyz="1.646429 -1.338775 0.000000" rpy="0.000000 0.000000 0.632115" />
+  <parent link="dummy_link" />
+  <child link="plant_41" />
+ </joint>
+
+
+ <link name="plant_42">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_42" type="fixed">
+  <origin xyz="1.680919 -2.071221 0.000000" rpy="0.000000 0.000000 1.835863" />
+  <parent link="dummy_link" />
+  <child link="plant_42" />
+ </joint>
+
+
+ <link name="plant_43">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_43" type="fixed">
+  <origin xyz="1.771860 0.177049 0.000000" rpy="0.000000 0.000000 2.928560" />
+  <parent link="dummy_link" />
+  <child link="plant_43" />
+ </joint>
+
+
+ <link name="plant_44">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_44" type="fixed">
+  <origin xyz="1.810527 -0.590530 0.000000" rpy="0.000000 0.000000 2.561231" />
+  <parent link="dummy_link" />
+  <child link="plant_44" />
+ </joint>
+
+
+ <link name="plant_45">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_45" type="fixed">
+  <origin xyz="1.793773 -1.360080 0.000000" rpy="0.000000 0.000000 1.773623" />
+  <parent link="dummy_link" />
+  <child link="plant_45" />
+ </joint>
+
+
+ <link name="plant_46">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_46" type="fixed">
+  <origin xyz="1.828290 -2.119134 0.000000" rpy="0.000000 0.000000 0.910368" />
+  <parent link="dummy_link" />
+  <child link="plant_46" />
+ </joint>
+
+
+ <link name="plant_47">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_47" type="fixed">
+  <origin xyz="1.978488 0.097389 0.000000" rpy="0.000000 0.000000 2.253783" />
+  <parent link="dummy_link" />
+  <child link="plant_47" />
+ </joint>
+
+
+ <link name="plant_48">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_48" type="fixed">
+  <origin xyz="1.949855 -0.619740 0.000000" rpy="0.000000 0.000000 2.266340" />
+  <parent link="dummy_link" />
+  <child link="plant_48" />
+ </joint>
+
+
+ <link name="plant_49">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_49" type="fixed">
+  <origin xyz="1.954224 -1.404578 0.000000" rpy="0.000000 0.000000 2.343903" />
+  <parent link="dummy_link" />
+  <child link="plant_49" />
+ </joint>
+
+
+ <link name="plant_50">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_50" type="fixed">
+  <origin xyz="1.967958 -2.142477 0.000000" rpy="0.000000 0.000000 0.804720" />
+  <parent link="dummy_link" />
+  <child link="plant_50" />
+ </joint>
+
+
+ <link name="plant_51">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_51" type="fixed">
+  <origin xyz="2.108258 0.041533 0.000000" rpy="0.000000 0.000000 0.032421" />
+  <parent link="dummy_link" />
+  <child link="plant_51" />
+ </joint>
+
+
+ <link name="plant_52">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_52" type="fixed">
+  <origin xyz="2.051904 -0.700386 0.000000" rpy="0.000000 0.000000 0.856763" />
+  <parent link="dummy_link" />
+  <child link="plant_52" />
+ </joint>
+
+
+ <link name="plant_53">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_53" type="fixed">
+  <origin xyz="2.155126 -1.437046 0.000000" rpy="0.000000 0.000000 0.055932" />
+  <parent link="dummy_link" />
+  <child link="plant_53" />
+ </joint>
+
+
+ <link name="plant_54">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_54" type="fixed">
+  <origin xyz="2.069392 -2.176052 0.000000" rpy="0.000000 0.000000 2.518597" />
+  <parent link="dummy_link" />
+  <child link="plant_54" />
+ </joint>
+
+
+ <link name="plant_55">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_55" type="fixed">
+  <origin xyz="2.219013 0.007223 0.000000" rpy="0.000000 0.000000 2.943318" />
+  <parent link="dummy_link" />
+  <child link="plant_55" />
+ </joint>
+
+
+ <link name="plant_56">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_56" type="fixed">
+  <origin xyz="2.252706 -0.717389 0.000000" rpy="0.000000 0.000000 3.071920" />
+  <parent link="dummy_link" />
+  <child link="plant_56" />
+ </joint>
+
+
+ <link name="plant_57">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_57" type="fixed">
+  <origin xyz="2.229628 -1.507233 0.000000" rpy="0.000000 0.000000 2.608065" />
+  <parent link="dummy_link" />
+  <child link="plant_57" />
+ </joint>
+
+
+ <link name="plant_58">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_58" type="fixed">
+  <origin xyz="2.249505 -2.264001 0.000000" rpy="0.000000 0.000000 0.042375" />
+  <parent link="dummy_link" />
+  <child link="plant_58" />
+ </joint>
+
+
+ <link name="plant_59">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_59" type="fixed">
+  <origin xyz="2.414676 -0.014260 0.000000" rpy="0.000000 0.000000 1.718394" />
+  <parent link="dummy_link" />
+  <child link="plant_59" />
+ </joint>
+
+
+ <link name="plant_60">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_60" type="fixed">
+  <origin xyz="2.420728 -0.751255 0.000000" rpy="0.000000 0.000000 2.056919" />
+  <parent link="dummy_link" />
+  <child link="plant_60" />
+ </joint>
+
+
+ <link name="plant_61">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_61" type="fixed">
+  <origin xyz="2.418303 -1.529892 0.000000" rpy="0.000000 0.000000 1.812963" />
+  <parent link="dummy_link" />
+  <child link="plant_61" />
+ </joint>
+
+
+ <link name="plant_62">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_62" type="fixed">
+  <origin xyz="2.393253 -2.315285 0.000000" rpy="0.000000 0.000000 2.574580" />
+  <parent link="dummy_link" />
+  <child link="plant_62" />
+ </joint>
+
+
+ <link name="plant_63">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_63" type="fixed">
+  <origin xyz="2.578840 -0.092732 0.000000" rpy="0.000000 0.000000 2.652230" />
+  <parent link="dummy_link" />
+  <child link="plant_63" />
+ </joint>
+
+
+ <link name="plant_64">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_64" type="fixed">
+  <origin xyz="2.575855 -0.828115 0.000000" rpy="0.000000 0.000000 3.132083" />
+  <parent link="dummy_link" />
+  <child link="plant_64" />
+ </joint>
+
+
+ <link name="plant_65">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_65" type="fixed">
+  <origin xyz="2.560420 -1.620914 0.000000" rpy="0.000000 0.000000 0.966030" />
+  <parent link="dummy_link" />
+  <child link="plant_65" />
+ </joint>
+
+
+ <link name="plant_66">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_66" type="fixed">
+  <origin xyz="2.555340 -2.336241 0.000000" rpy="0.000000 0.000000 0.863388" />
+  <parent link="dummy_link" />
+  <child link="plant_66" />
+ </joint>
+
+
+ <link name="plant_67">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_67" type="fixed">
+  <origin xyz="2.718541 -0.140888 0.000000" rpy="0.000000 0.000000 2.392356" />
+  <parent link="dummy_link" />
+  <child link="plant_67" />
+ </joint>
+
+
+ <link name="plant_68">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_68" type="fixed">
+  <origin xyz="2.704975 -0.897455 0.000000" rpy="0.000000 0.000000 3.127332" />
+  <parent link="dummy_link" />
+  <child link="plant_68" />
+ </joint>
+
+
+ <link name="plant_69">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_69" type="fixed">
+  <origin xyz="2.688757 -1.674822 0.000000" rpy="0.000000 0.000000 2.579460" />
+  <parent link="dummy_link" />
+  <child link="plant_69" />
+ </joint>
+
+
+ <link name="plant_70">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_70" type="fixed">
+  <origin xyz="2.686862 -2.409397 0.000000" rpy="0.000000 0.000000 1.049432" />
+  <parent link="dummy_link" />
+  <child link="plant_70" />
+ </joint>
+
+
+ <link name="plant_71">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_71" type="fixed">
+  <origin xyz="2.818095 -0.160594 0.000000" rpy="0.000000 0.000000 1.672280" />
+  <parent link="dummy_link" />
+  <child link="plant_71" />
+ </joint>
+
+
+ <link name="plant_72">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_72" type="fixed">
+  <origin xyz="2.822882 -0.902234 0.000000" rpy="0.000000 0.000000 3.128679" />
+  <parent link="dummy_link" />
+  <child link="plant_72" />
+ </joint>
+
+
+ <link name="plant_73">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_73" type="fixed">
+  <origin xyz="2.853339 -1.714876 0.000000" rpy="0.000000 0.000000 0.566081" />
+  <parent link="dummy_link" />
+  <child link="plant_73" />
+ </joint>
+
+
+ <link name="plant_74">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_74" type="fixed">
+  <origin xyz="2.882391 -2.448615 0.000000" rpy="0.000000 0.000000 1.310826" />
+  <parent link="dummy_link" />
+  <child link="plant_74" />
+ </joint>
+
+
+ <link name="plant_75">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_75" type="fixed">
+  <origin xyz="2.964828 -0.219736 0.000000" rpy="0.000000 0.000000 0.140492" />
+  <parent link="dummy_link" />
+  <child link="plant_75" />
+ </joint>
+
+
+ <link name="plant_76">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_76" type="fixed">
+  <origin xyz="3.014508 -1.030886 0.000000" rpy="0.000000 0.000000 1.192493" />
+  <parent link="dummy_link" />
+  <child link="plant_76" />
+ </joint>
+
+
+ <link name="plant_77">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_77" type="fixed">
+  <origin xyz="3.019093 -1.743556 0.000000" rpy="0.000000 0.000000 2.644716" />
+  <parent link="dummy_link" />
+  <child link="plant_77" />
+ </joint>
+
+
+ <link name="plant_78">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/maizeplant.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_78" type="fixed">
+  <origin xyz="3.019326 -2.505324 0.000000" rpy="0.000000 0.000000 2.647808" />
+  <parent link="dummy_link" />
+  <child link="plant_78" />
+ </joint>
+
+
+
+
+</robot>

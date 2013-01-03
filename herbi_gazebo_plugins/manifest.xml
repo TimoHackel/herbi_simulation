@@ -1,0 +1,20 @@
+<package>
+    <description brief="herbi_gazebo_plugins">
+        Contains a differential drive plugin that works like the erratic plugin, only with 4 wheels. 
+    </description>
+    herbi_gazebo_plugins
+    <author>Timo Hackel</author>
+    <license>BSD</license>
+    <review status="unreviewed" notes=""/>
+    <url>http://ros.org/wiki/herbi_gazebo_plugins</url>
+
+    <depend package="roscpp"/>
+    <depend package="gazebo"/>
+    <depend package="gazebo_plugins"/>
+
+    <export>
+        <gazebo plugin_path="${prefix}/lib" />
+    </export>
+</package>
+
+
