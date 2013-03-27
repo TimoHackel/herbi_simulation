@@ -1,0 +1,2295 @@
+<?xml version="1.0"?> 
+<robot name="field"> 
+ <!-- auto generated urdf file --> 
+ <link name="dummy_link"> 
+  <inertial> 
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" /> 
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" /> 
+  </inertial> 
+  <visual> 
+   <origin xyz="0 0 0" /> 
+   <geometry> 
+    <box size="0.00 0.00 0.00" /> 
+   </geometry> 
+  </visual> 
+  <collision> 
+   <origin xyz="0 0 0" /> 
+   <geometry> 
+    <box size="0.00 0.00 0.00" /> 
+   </geometry> 
+  </collision> 
+ </link> 
+ 
+ 
+ <!-- generate plants --> <link name="plant_1">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_1" type="fixed">
+  <origin xyz="0.022650 0.402537 0.000000" rpy="0.000000 0.000000 2.392658" />
+  <parent link="dummy_link" />
+  <child link="plant_1" />
+ </joint>
+
+
+ <link name="plant_2">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_2" type="fixed">
+  <origin xyz="0.014551 -0.409560 0.000000" rpy="0.000000 0.000000 2.863765" />
+  <parent link="dummy_link" />
+  <child link="plant_2" />
+ </joint>
+
+
+ <link name="plant_3">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_3" type="fixed">
+  <origin xyz="0.009224 -1.184898 0.000000" rpy="0.000000 0.000000 3.008273" />
+  <parent link="dummy_link" />
+  <child link="plant_3" />
+ </joint>
+
+
+ <link name="plant_4">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_4" type="fixed">
+  <origin xyz="0.007748 -1.904165 0.000000" rpy="0.000000 0.000000 0.386417" />
+  <parent link="dummy_link" />
+  <child link="plant_4" />
+ </joint>
+
+
+ <link name="plant_5">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_5" type="fixed">
+  <origin xyz="0.165000 0.367909 0.000000" rpy="0.000000 0.000000 1.156627" />
+  <parent link="dummy_link" />
+  <child link="plant_5" />
+ </joint>
+
+
+ <link name="plant_6">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_6" type="fixed">
+  <origin xyz="0.152049 -0.392532 0.000000" rpy="0.000000 0.000000 1.109061" />
+  <parent link="dummy_link" />
+  <child link="plant_6" />
+ </joint>
+
+
+ <link name="plant_7">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_7" type="fixed">
+  <origin xyz="0.168627 -1.170205 0.000000" rpy="0.000000 0.000000 2.455600" />
+  <parent link="dummy_link" />
+  <child link="plant_7" />
+ </joint>
+
+
+ <link name="plant_8">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_8" type="fixed">
+  <origin xyz="0.160444 -1.905190 0.000000" rpy="0.000000 0.000000 2.803125" />
+  <parent link="dummy_link" />
+  <child link="plant_8" />
+ </joint>
+
+
+ <link name="plant_9">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_9" type="fixed">
+  <origin xyz="0.287650 0.374842 0.000000" rpy="0.000000 0.000000 0.175229" />
+  <parent link="dummy_link" />
+  <child link="plant_9" />
+ </joint>
+
+
+ <link name="plant_10">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_10" type="fixed">
+  <origin xyz="0.329199 -0.351976 0.000000" rpy="0.000000 0.000000 3.037550" />
+  <parent link="dummy_link" />
+  <child link="plant_10" />
+ </joint>
+
+
+ <link name="plant_11">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_11" type="fixed">
+  <origin xyz="0.297539 -1.158126 0.000000" rpy="0.000000 0.000000 0.938323" />
+  <parent link="dummy_link" />
+  <child link="plant_11" />
+ </joint>
+
+
+ <link name="plant_12">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_12" type="fixed">
+  <origin xyz="0.313108 -1.881996 0.000000" rpy="0.000000 0.000000 0.884265" />
+  <parent link="dummy_link" />
+  <child link="plant_12" />
+ </joint>
+
+
+ <link name="plant_13">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_13" type="fixed">
+  <origin xyz="0.483776 0.360503 0.000000" rpy="0.000000 0.000000 0.172885" />
+  <parent link="dummy_link" />
+  <child link="plant_13" />
+ </joint>
+
+
+ <link name="plant_14">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_14" type="fixed">
+  <origin xyz="0.456946 -0.398342 0.000000" rpy="0.000000 0.000000 0.289723" />
+  <parent link="dummy_link" />
+  <child link="plant_14" />
+ </joint>
+
+
+ <link name="plant_15">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_15" type="fixed">
+  <origin xyz="0.441535 -1.148124 0.000000" rpy="0.000000 0.000000 2.990609" />
+  <parent link="dummy_link" />
+  <child link="plant_15" />
+ </joint>
+
+
+ <link name="plant_16">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_16" type="fixed">
+  <origin xyz="0.410726 -1.887773 0.000000" rpy="0.000000 0.000000 2.582077" />
+  <parent link="dummy_link" />
+  <child link="plant_16" />
+ </joint>
+
+
+ <link name="plant_17">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_17" type="fixed">
+  <origin xyz="0.585781 0.370287 0.000000" rpy="0.000000 0.000000 2.284326" />
+  <parent link="dummy_link" />
+  <child link="plant_17" />
+ </joint>
+
+
+ <link name="plant_18">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_18" type="fixed">
+  <origin xyz="0.563547 -0.376160 0.000000" rpy="0.000000 0.000000 1.918391" />
+  <parent link="dummy_link" />
+  <child link="plant_18" />
+ </joint>
+
+
+ <link name="plant_19">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_19" type="fixed">
+  <origin xyz="0.619727 -1.146979 0.000000" rpy="0.000000 0.000000 2.057699" />
+  <parent link="dummy_link" />
+  <child link="plant_19" />
+ </joint>
+
+
+ <link name="plant_20">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_20" type="fixed">
+  <origin xyz="0.592006 -1.866068 0.000000" rpy="0.000000 0.000000 0.443964" />
+  <parent link="dummy_link" />
+  <child link="plant_20" />
+ </joint>
+
+
+ <link name="plant_21">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_21" type="fixed">
+  <origin xyz="0.741492 0.376194 0.000000" rpy="0.000000 0.000000 1.219706" />
+  <parent link="dummy_link" />
+  <child link="plant_21" />
+ </joint>
+
+
+ <link name="plant_22">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_22" type="fixed">
+  <origin xyz="0.737460 -0.376696 0.000000" rpy="0.000000 0.000000 0.160917" />
+  <parent link="dummy_link" />
+  <child link="plant_22" />
+ </joint>
+
+
+ <link name="plant_23">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_23" type="fixed">
+  <origin xyz="0.743749 -1.129476 0.000000" rpy="0.000000 0.000000 2.115258" />
+  <parent link="dummy_link" />
+  <child link="plant_23" />
+ </joint>
+
+
+ <link name="plant_24">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_24" type="fixed">
+  <origin xyz="0.736124 -1.877871 0.000000" rpy="0.000000 0.000000 1.322558" />
+  <parent link="dummy_link" />
+  <child link="plant_24" />
+ </joint>
+
+
+ <link name="plant_25">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_25" type="fixed">
+  <origin xyz="0.908204 0.379974 0.000000" rpy="0.000000 0.000000 2.714135" />
+  <parent link="dummy_link" />
+  <child link="plant_25" />
+ </joint>
+
+
+ <link name="plant_26">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_26" type="fixed">
+  <origin xyz="0.894797 -0.379992 0.000000" rpy="0.000000 0.000000 0.953524" />
+  <parent link="dummy_link" />
+  <child link="plant_26" />
+ </joint>
+
+
+ <link name="plant_27">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_27" type="fixed">
+  <origin xyz="0.895887 -1.139719 0.000000" rpy="0.000000 0.000000 1.957364" />
+  <parent link="dummy_link" />
+  <child link="plant_27" />
+ </joint>
+
+
+ <link name="plant_28">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_28" type="fixed">
+  <origin xyz="0.868915 -1.913621 0.000000" rpy="0.000000 0.000000 1.397398" />
+  <parent link="dummy_link" />
+  <child link="plant_28" />
+ </joint>
+
+
+ <link name="plant_29">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_29" type="fixed">
+  <origin xyz="1.020995 0.361248 0.000000" rpy="0.000000 0.000000 0.334051" />
+  <parent link="dummy_link" />
+  <child link="plant_29" />
+ </joint>
+
+
+ <link name="plant_30">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_30" type="fixed">
+  <origin xyz="1.045729 -0.385121 0.000000" rpy="0.000000 0.000000 2.522998" />
+  <parent link="dummy_link" />
+  <child link="plant_30" />
+ </joint>
+
+
+ <link name="plant_31">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_31" type="fixed">
+  <origin xyz="1.045980 -1.161536 0.000000" rpy="0.000000 0.000000 0.845428" />
+  <parent link="dummy_link" />
+  <child link="plant_31" />
+ </joint>
+
+
+ <link name="plant_32">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_32" type="fixed">
+  <origin xyz="1.038719 -1.892348 0.000000" rpy="0.000000 0.000000 0.533159" />
+  <parent link="dummy_link" />
+  <child link="plant_32" />
+ </joint>
+
+
+ <link name="plant_33">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_33" type="fixed">
+  <origin xyz="1.223341 0.382433 0.000000" rpy="0.000000 0.000000 0.516128" />
+  <parent link="dummy_link" />
+  <child link="plant_33" />
+ </joint>
+
+
+ <link name="plant_34">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_34" type="fixed">
+  <origin xyz="1.206796 -0.351131 0.000000" rpy="0.000000 0.000000 0.390661" />
+  <parent link="dummy_link" />
+  <child link="plant_34" />
+ </joint>
+
+
+ <link name="plant_35">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_35" type="fixed">
+  <origin xyz="1.191367 -1.152161 0.000000" rpy="0.000000 0.000000 2.177868" />
+  <parent link="dummy_link" />
+  <child link="plant_35" />
+ </joint>
+
+
+ <link name="plant_36">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_36" type="fixed">
+  <origin xyz="1.213536 -1.922120 0.000000" rpy="0.000000 0.000000 1.879747" />
+  <parent link="dummy_link" />
+  <child link="plant_36" />
+ </joint>
+
+
+ <link name="plant_37">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_37" type="fixed">
+  <origin xyz="1.349674 0.401496 0.000000" rpy="0.000000 0.000000 1.500963" />
+  <parent link="dummy_link" />
+  <child link="plant_37" />
+ </joint>
+
+
+ <link name="plant_38">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_38" type="fixed">
+  <origin xyz="1.339996 -0.367892 0.000000" rpy="0.000000 0.000000 2.389155" />
+  <parent link="dummy_link" />
+  <child link="plant_38" />
+ </joint>
+
+
+ <link name="plant_39">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_39" type="fixed">
+  <origin xyz="1.351570 -1.179538 0.000000" rpy="0.000000 0.000000 0.491744" />
+  <parent link="dummy_link" />
+  <child link="plant_39" />
+ </joint>
+
+
+ <link name="plant_40">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_40" type="fixed">
+  <origin xyz="1.338602 -1.932524 0.000000" rpy="0.000000 0.000000 0.972397" />
+  <parent link="dummy_link" />
+  <child link="plant_40" />
+ </joint>
+
+
+ <link name="plant_41">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_41" type="fixed">
+  <origin xyz="1.450498 0.350764 0.000000" rpy="0.000000 0.000000 1.319029" />
+  <parent link="dummy_link" />
+  <child link="plant_41" />
+ </joint>
+
+
+ <link name="plant_42">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_42" type="fixed">
+  <origin xyz="1.476801 -0.440327 0.000000" rpy="0.000000 0.000000 0.890843" />
+  <parent link="dummy_link" />
+  <child link="plant_42" />
+ </joint>
+
+
+ <link name="plant_43">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_43" type="fixed">
+  <origin xyz="1.486865 -1.161584 0.000000" rpy="0.000000 0.000000 2.714650" />
+  <parent link="dummy_link" />
+  <child link="plant_43" />
+ </joint>
+
+
+ <link name="plant_44">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_44" type="fixed">
+  <origin xyz="1.513462 -1.886352 0.000000" rpy="0.000000 0.000000 3.084644" />
+  <parent link="dummy_link" />
+  <child link="plant_44" />
+ </joint>
+
+
+ <link name="plant_45">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_45" type="fixed">
+  <origin xyz="1.657556 0.345131 0.000000" rpy="0.000000 0.000000 0.686540" />
+  <parent link="dummy_link" />
+  <child link="plant_45" />
+ </joint>
+
+
+ <link name="plant_46">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_46" type="fixed">
+  <origin xyz="1.698343 -0.432254 0.000000" rpy="0.000000 0.000000 3.036201" />
+  <parent link="dummy_link" />
+  <child link="plant_46" />
+ </joint>
+
+
+ <link name="plant_47">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_47" type="fixed">
+  <origin xyz="1.653411 -1.113539 0.000000" rpy="0.000000 0.000000 0.779181" />
+  <parent link="dummy_link" />
+  <child link="plant_47" />
+ </joint>
+
+
+ <link name="plant_48">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_48" type="fixed">
+  <origin xyz="1.647020 -1.915523 0.000000" rpy="0.000000 0.000000 0.395102" />
+  <parent link="dummy_link" />
+  <child link="plant_48" />
+ </joint>
+
+
+ <link name="plant_49">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_49" type="fixed">
+  <origin xyz="1.797816 0.380320 0.000000" rpy="0.000000 0.000000 1.172899" />
+  <parent link="dummy_link" />
+  <child link="plant_49" />
+ </joint>
+
+
+ <link name="plant_50">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_50" type="fixed">
+  <origin xyz="1.768429 -0.398291 0.000000" rpy="0.000000 0.000000 3.124368" />
+  <parent link="dummy_link" />
+  <child link="plant_50" />
+ </joint>
+
+
+ <link name="plant_51">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_51" type="fixed">
+  <origin xyz="1.785737 -1.178777 0.000000" rpy="0.000000 0.000000 1.452769" />
+  <parent link="dummy_link" />
+  <child link="plant_51" />
+ </joint>
+
+
+ <link name="plant_52">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_52" type="fixed">
+  <origin xyz="1.839485 -1.858994 0.000000" rpy="0.000000 0.000000 2.574172" />
+  <parent link="dummy_link" />
+  <child link="plant_52" />
+ </joint>
+
+
+ <link name="plant_53">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_53" type="fixed">
+  <origin xyz="1.960613 0.337539 0.000000" rpy="0.000000 0.000000 0.198830" />
+  <parent link="dummy_link" />
+  <child link="plant_53" />
+ </joint>
+
+
+ <link name="plant_54">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_54" type="fixed">
+  <origin xyz="1.940208 -0.392085 0.000000" rpy="0.000000 0.000000 2.478832" />
+  <parent link="dummy_link" />
+  <child link="plant_54" />
+ </joint>
+
+
+ <link name="plant_55">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_55" type="fixed">
+  <origin xyz="1.962831 -1.152235 0.000000" rpy="0.000000 0.000000 1.675572" />
+  <parent link="dummy_link" />
+  <child link="plant_55" />
+ </joint>
+
+
+ <link name="plant_56">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_56" type="fixed">
+  <origin xyz="1.938083 -1.917447 0.000000" rpy="0.000000 0.000000 0.192999" />
+  <parent link="dummy_link" />
+  <child link="plant_56" />
+ </joint>
+
+
+ <link name="plant_57">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_57" type="fixed">
+  <origin xyz="2.088467 0.385976 0.000000" rpy="0.000000 0.000000 1.872524" />
+  <parent link="dummy_link" />
+  <child link="plant_57" />
+ </joint>
+
+
+ <link name="plant_58">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_58" type="fixed">
+  <origin xyz="2.087833 -0.386236 0.000000" rpy="0.000000 0.000000 2.294237" />
+  <parent link="dummy_link" />
+  <child link="plant_58" />
+ </joint>
+
+
+ <link name="plant_59">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_59" type="fixed">
+  <origin xyz="2.128410 -1.161874 0.000000" rpy="0.000000 0.000000 2.545147" />
+  <parent link="dummy_link" />
+  <child link="plant_59" />
+ </joint>
+
+
+ <link name="plant_60">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_60" type="fixed">
+  <origin xyz="2.099943 -1.950811 0.000000" rpy="0.000000 0.000000 0.784886" />
+  <parent link="dummy_link" />
+  <child link="plant_60" />
+ </joint>
+
+
+ <link name="plant_61">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_61" type="fixed">
+  <origin xyz="2.272692 0.407416 0.000000" rpy="0.000000 0.000000 1.837074" />
+  <parent link="dummy_link" />
+  <child link="plant_61" />
+ </joint>
+
+
+ <link name="plant_62">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_62" type="fixed">
+  <origin xyz="2.293841 -0.365513 0.000000" rpy="0.000000 0.000000 0.379458" />
+  <parent link="dummy_link" />
+  <child link="plant_62" />
+ </joint>
+
+
+ <link name="plant_63">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_63" type="fixed">
+  <origin xyz="2.243614 -1.139248 0.000000" rpy="0.000000 0.000000 0.666727" />
+  <parent link="dummy_link" />
+  <child link="plant_63" />
+ </joint>
+
+
+ <link name="plant_64">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_64" type="fixed">
+  <origin xyz="2.233644 -1.877887 0.000000" rpy="0.000000 0.000000 0.143616" />
+  <parent link="dummy_link" />
+  <child link="plant_64" />
+ </joint>
+
+
+ <link name="plant_65">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_65" type="fixed">
+  <origin xyz="2.378880 0.398423 0.000000" rpy="0.000000 0.000000 0.397296" />
+  <parent link="dummy_link" />
+  <child link="plant_65" />
+ </joint>
+
+
+ <link name="plant_66">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_66" type="fixed">
+  <origin xyz="2.410961 -0.375705 0.000000" rpy="0.000000 0.000000 0.560390" />
+  <parent link="dummy_link" />
+  <child link="plant_66" />
+ </joint>
+
+
+ <link name="plant_67">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_67" type="fixed">
+  <origin xyz="2.399169 -1.144711 0.000000" rpy="0.000000 0.000000 2.201160" />
+  <parent link="dummy_link" />
+  <child link="plant_67" />
+ </joint>
+
+
+ <link name="plant_68">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_68" type="fixed">
+  <origin xyz="2.403933 -1.886035 0.000000" rpy="0.000000 0.000000 1.635618" />
+  <parent link="dummy_link" />
+  <child link="plant_68" />
+ </joint>
+
+
+ <link name="plant_69">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_69" type="fixed">
+  <origin xyz="2.552784 0.390551 0.000000" rpy="0.000000 0.000000 3.129329" />
+  <parent link="dummy_link" />
+  <child link="plant_69" />
+ </joint>
+
+
+ <link name="plant_70">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_70" type="fixed">
+  <origin xyz="2.571110 -0.386293 0.000000" rpy="0.000000 0.000000 3.134044" />
+  <parent link="dummy_link" />
+  <child link="plant_70" />
+ </joint>
+
+
+ <link name="plant_71">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_71" type="fixed">
+  <origin xyz="2.556810 -1.140301 0.000000" rpy="0.000000 0.000000 1.233319" />
+  <parent link="dummy_link" />
+  <child link="plant_71" />
+ </joint>
+
+
+ <link name="plant_72">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_72" type="fixed">
+  <origin xyz="2.554646 -1.949897 0.000000" rpy="0.000000 0.000000 0.935696" />
+  <parent link="dummy_link" />
+  <child link="plant_72" />
+ </joint>
+
+
+ <link name="plant_73">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_73" type="fixed">
+  <origin xyz="2.702523 0.343085 0.000000" rpy="0.000000 0.000000 3.005238" />
+  <parent link="dummy_link" />
+  <child link="plant_73" />
+ </joint>
+
+
+ <link name="plant_74">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_74" type="fixed">
+  <origin xyz="2.703181 -0.382758 0.000000" rpy="0.000000 0.000000 2.779593" />
+  <parent link="dummy_link" />
+  <child link="plant_74" />
+ </joint>
+
+
+ <link name="plant_75">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_75" type="fixed">
+  <origin xyz="2.681431 -1.136997 0.000000" rpy="0.000000 0.000000 0.157316" />
+  <parent link="dummy_link" />
+  <child link="plant_75" />
+ </joint>
+
+
+ <link name="plant_76">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_76" type="fixed">
+  <origin xyz="2.663837 -1.890682 0.000000" rpy="0.000000 0.000000 2.883705" />
+  <parent link="dummy_link" />
+  <child link="plant_76" />
+ </joint>
+
+
+ <link name="plant_77">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_77" type="fixed">
+  <origin xyz="2.865471 0.375345 0.000000" rpy="0.000000 0.000000 0.087668" />
+  <parent link="dummy_link" />
+  <child link="plant_77" />
+ </joint>
+
+
+ <link name="plant_78">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_78" type="fixed">
+  <origin xyz="2.847493 -0.376984 0.000000" rpy="0.000000 0.000000 1.169721" />
+  <parent link="dummy_link" />
+  <child link="plant_78" />
+ </joint>
+
+
+ <link name="plant_79">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_79" type="fixed">
+  <origin xyz="2.849550 -1.164040 0.000000" rpy="0.000000 0.000000 2.444516" />
+  <parent link="dummy_link" />
+  <child link="plant_79" />
+ </joint>
+
+
+ <link name="plant_80">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_80" type="fixed">
+  <origin xyz="2.898151 -1.849481 0.000000" rpy="0.000000 0.000000 1.022046" />
+  <parent link="dummy_link" />
+  <child link="plant_80" />
+ </joint>
+
+
+ <link name="plant_81">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_81" type="fixed">
+  <origin xyz="2.950814 0.363563 0.000000" rpy="0.000000 0.000000 0.294676" />
+  <parent link="dummy_link" />
+  <child link="plant_81" />
+ </joint>
+
+
+ <link name="plant_82">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_82" type="fixed">
+  <origin xyz="2.988153 -0.406997 0.000000" rpy="0.000000 0.000000 1.019737" />
+  <parent link="dummy_link" />
+  <child link="plant_82" />
+ </joint>
+
+
+ <link name="plant_83">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_83" type="fixed">
+  <origin xyz="2.996321 -1.117520 0.000000" rpy="0.000000 0.000000 1.490305" />
+  <parent link="dummy_link" />
+  <child link="plant_83" />
+ </joint>
+
+
+ <link name="plant_84">
+  <inertial>
+   <origin xyz="0 0 0" /> 
+   <mass value="5.0" />
+   <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+  </inertial>
+  <visual>
+   <origin xyz="0 0 0"/>
+   <geometry>
+    <mesh filename="package://herbi_gazebo_worlds/ros/meshes/sunflower.dae"/>
+   </geometry>
+  </visual>
+  <collision>
+   <origin xyz="0 0 0.2"/>
+   <geometry>
+    <cylinder length="0.4" radius="0.02"/>
+   </geometry>
+  </collision>
+ </link>
+
+ <joint name="joint_plant_84" type="fixed">
+  <origin xyz="3.036546 -1.880744 0.000000" rpy="0.000000 0.000000 1.704963" />
+  <parent link="dummy_link" />
+  <child link="plant_84" />
+ </joint>
+
+
+
+
+</robot>
